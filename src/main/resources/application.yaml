@@ -6,9 +6,8 @@ spring:
 
 eureka:
   client:
-    enabled: false
     serviceUrl:
-      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
+      defaultZone: ${EUREKA_URL:http://user:password@localhost:5000}/eureka/
   instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
+    hostname: ${DOMAIN_NAME}
+    nonSecurePort: 80

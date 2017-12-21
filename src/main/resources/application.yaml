@@ -1,8 +1,8 @@
 spring:
   application:
     name: chucknorris-service
-server:
-  port: ${PORT:8085}
+#server:
+#  port: ${PORT:8085}
 
 eureka:
   client:

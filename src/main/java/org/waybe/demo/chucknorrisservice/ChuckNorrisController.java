@@ -17,6 +17,6 @@ public class ChuckNorrisController {
 
     @RequestMapping(method = RequestMethod.GET)
     public @ResponseBody ChuckNorrisPhrase responsePhrase(){
-        return new ChuckNorrisPhrase(id.incrementAndGet(),"There are no aliens in Area 51, only Chuck Norris' children.");
+        return new ChuckNorrisPhrase(id.incrementAndGet(),"There are no aliens in Area 51, only Chuck Norris' children..");
     }
 }

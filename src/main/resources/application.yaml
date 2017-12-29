@@ -1,13 +1,14 @@
 spring:
   application:
     name: chucknorris-service
-#server:
-#  port: ${PORT:8085}
+server:
+  port: ${PORT:8085}
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URL:http://user:password@localhost:87861}/eureka/
+      defaultZone: ${EUREKA_URL:http://localhost:87861}/eureka/
   instance:
-    hostname: ${DOMAIN_NAME}
+    hostname: ${DOMAIN_NAME:localhost}
     nonSecurePort: 80
+

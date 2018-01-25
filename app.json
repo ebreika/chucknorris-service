@@ -1,5 +1,7 @@
 {
   "name": "chucknorris-service",
+  "description": "Eureka Client demo project.",
+  "success_url": "/health",
   "scripts": {
   },
   "env": {
